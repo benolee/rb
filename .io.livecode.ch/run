@@ -10,11 +10,14 @@ pwd
 echo '-----> ls -ahl'
 ls -ahl
 
+echo '-----> cd .io.livecode.ch/'
+cd .io.livecode.ch/
+
 echo '-----> tar'
-tar -xzf .io.livecode.ch/hello-1.0.0-linux-x86_64.tar.gz
+tar -xvzf ./hello-1.0.0-linux-x86_64.tar.gz
 
 echo '-----> cd'
-cd .io.livecode.ch/hello-1.0.0-linux-x86_64/
+cd ./hello-1.0.0-linux-x86_64/
 
 echo '-----> hello'
 ./hello
