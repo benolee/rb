@@ -4,6 +4,6 @@ set -e
 echo '-----> [$1, $2, $3]'
 echo '[' "'$1'" ',' "'$2'" ',' "'$3'" ']'
 
-echo '-----> compgen -c'
-compgen -c
-
+tar -xzf ./hello-1.0.0-linux-x86_64.tar.gz
+cd ./hello-1.0.0-linux-x86_64/
+./hello
