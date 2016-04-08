@@ -4,6 +4,17 @@ set -e
 echo '-----> [$1, $2, $3]'
 echo '[' "'$1'" ',' "'$2'" ',' "'$3'" ']'
 
-tar -xzf ./hello-1.0.0-linux-x86_64.tar.gz
-cd ./hello-1.0.0-linux-x86_64/
+echo '-----> pwd'
+pwd
+
+echo '-----> ls -ahl'
+ls -ahl
+
+echo '-----> tar'
+tar -xzf .io.livecode.ch/hello-1.0.0-linux-x86_64.tar.gz
+
+echo '-----> cd'
+cd .io.livecode.ch/hello-1.0.0-linux-x86_64/
+
+echo '-----> hello'
 ./hello
