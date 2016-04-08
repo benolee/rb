@@ -1,8 +1,6 @@
 #!/bin/bash
 set -e
 
-cat .io.livecode.ch/header.txt $1 .io.livecode.ch/footer.txt >out.rb
-
 echo '-----> [$1, $2, $3]'
 ruby -e "p ['$1', '$2', '$3']"
 
