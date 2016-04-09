@@ -5,6 +5,7 @@ main_txt="$1"
 pre_txt="$2"
 post_txt="$3"
 
+cd .io.livecode.ch/
 cat ./pre.rb "$pre_txt" "$main_txt" "$post_txt" > ./lib/app/hello.rb
 chmod +x ./lib/app/hello.rb
 ./hello
