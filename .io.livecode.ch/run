@@ -6,19 +6,19 @@ pre_txt="$2"
 post_txt="$3"
 
 echo '-----> cat pre_txt'
-cat pre_txt
+cat "$pre_txt"
 
 echo '-----> cat main_txt'
-cat main_txt
+cat "$main_txt"
 
 echo '-----> cat post_txt'
-cat post_txt
+cat "$post_txt"
 
 echo '-----> cd .io.livecode.ch/'
 cd .io.livecode.ch/
 
 echo '-----> cat ./pre.rb pre_txt main_txt post_txt > ./lib/app/hello.rb'
-cat ./pre.rb pre_txt main_txt post_txt > ./lib/app/hello.rb
+cat ./pre.rb "$pre_txt" "$main_txt" "$post_txt" > ./lib/app/hello.rb
 
 echo '-----> chmod +x ./lib/app/hello.rb'
 chmod +x ./lib/app/hello.rb
