@@ -1,17 +1,27 @@
 #!/bin/bash
 set -e
 
-echo '-----> [$1, $2, $3]'
-echo '[' "'$1'" ',' "'$2'" ',' "'$3'" ']'
+main_txt="$1"
+pre_txt="$2"
+post_txt="$3"
 
-echo '-----> pwd'
-pwd
+echo '-----> cat pre_txt'
+cat pre_txt
 
-echo '-----> ls -ahl'
-ls -ahl
+echo '-----> cat main_txt'
+cat main_txt
+
+echo '-----> cat post_txt'
+cat post_txt
 
 echo '-----> cd .io.livecode.ch/'
 cd .io.livecode.ch/
 
-echo '-----> hello.sh'
-./hello.sh
+echo '-----> cat ./pre.rb pre_txt main_txt post_txt > ./lib/app/hello.rb'
+cat ./pre.rb pre_txt main_txt post_txt > ./lib/app/hello.rb
+
+echo '-----> chmod +x ./lib/app/hello.rb'
+chmod +x ./lib/app/hello.rb
+
+echo '-----> ./hello'
+./hello
